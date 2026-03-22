@@ -1,4 +1,7 @@
+/*
 package com.anmolbarik.tree;
+
+import org.w3c.dom.Node;
 
 import java.util.Map;
 import java.util.TreeMap;
@@ -12,9 +15,10 @@ public class Graph {
             return;
         }
         if(!map.containsKey(level)){
-            map.put(level, root.data);
+            map.put(level, root);
         }
-        /*
+        */
+/*
         *
         public static void bfs(Queue queue)
         *{
@@ -49,20 +53,23 @@ public class Graph {
         *
         *
         *
-        * */
+        * *//*
+
         printLeftView(root.left,level-1, map);
         printLeftView(root.right,level+1, map);
     }
 
     public static void main(String[] args) {
         Map<Integer,Integer> map = new TreeMap<>();
-         /*Populating demo BST
+         */
+/*Populating demo BST
                 1---9
               /  \
              2     3
              \    / \
               8 - 5 - 6
-        */
+        *//*
+
         Node root = new Node(1);
         root.left = new Node(2);
         root.right = new Node(3);
@@ -76,3 +83,4 @@ public class Graph {
         }
     }
 }
+*/

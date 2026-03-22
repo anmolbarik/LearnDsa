@@ -10,9 +10,8 @@ public class EditDistance {
         //base condition
         for(int i =0; i<=a.length(); i++){
             dp[i][0] = i;
-
-
         }
+
         for(int i =0; i<=b.length(); i++){
             dp[0][i] = i;
         }
@@ -38,8 +37,8 @@ public class EditDistance {
     }
 
     public static void main(String[] args) {
-        String a = "abcab";
-        String b = "abd";
+        String a = "abc";
+        String b = "ab";
         System.out.println("Edit "+editDistance(a,b));
     }
 }

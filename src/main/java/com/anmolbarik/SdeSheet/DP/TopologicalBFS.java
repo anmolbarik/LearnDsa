@@ -11,12 +11,15 @@ class Solution {
 
         //finding indegree
         for(int i = 0;i<N;i++) {
+            //here if you observe it should return list,
+            // because adj is List of List,
+            // But Foreach loop can iterate directly over list of list
             for(Integer it: adj.get(i)) {
                 indegree[it]++;
             }
         }
         for(int i: indegree)
-        System.out.println(i);
+            System.out.println(i);
 
         Queue<Integer> q = new LinkedList<Integer>();
         for(int i = 0;i<N;i++) {

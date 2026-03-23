@@ -16,7 +16,7 @@ class Solution {
             }
         }
         for(int i: indegree)
-        System.out.println(indegree);
+        System.out.println(i);
 
         Queue<Integer> q = new LinkedList<Integer>();
         for(int i = 0;i<N;i++) {

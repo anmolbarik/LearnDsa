@@ -10,16 +10,16 @@ class Solution {
         int indegree[] = new int[N];
 
         //finding indegree
-        for(int i = 0;i<N;i++) {
-            //here if you observe it should return list,
-            // because adj is List of List,
-            // But Foreach loop can iterate directly over list of list
-            for(Integer it: adj.get(i)) {
+        for(List<Integer> li: adj) {
+            for(Integer it: li) {
                 indegree[it]++;
             }
         }
+        System.out.println("Indegree Array ");
         for(int i: indegree)
-            System.out.println(i);
+            System.out.print(i+" ");
+        System.out.println(" ");
+
 
         Queue<Integer> q = new LinkedList<Integer>();
         for(int i = 0;i<N;i++) {
@@ -45,6 +45,7 @@ class Solution {
             }
         }
         //printing topological ordering of nodes
+        System.out.println("Topo: ");
         for (int i=0;i< topo.length;i++){
             System.out.print(topo[i]+" ");
         }

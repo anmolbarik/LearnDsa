@@ -18,7 +18,7 @@ public class coinChange2 {
 
     public static void main(String[] args) {
         int[] coins = {1,2,5};
-        int amount = 2;
+        int amount = 5;
 
         System.out.println("Answer: "+getMaximumways(amount,coins));
     }

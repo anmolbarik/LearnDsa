@@ -12,8 +12,11 @@ public class AllSubset {
             return;
         }
         current.add(arr[index]);
+
         helper(index+1, current, arr,result);
+
         current.remove(current.size()-1);
+
         helper(index+1, current, arr,result);
 
     }

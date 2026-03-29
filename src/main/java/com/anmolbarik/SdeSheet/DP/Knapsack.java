@@ -6,6 +6,7 @@ public class Knapsack {
 
         int[][] dp = new int[size][weight+1];
 
+        //base condition
         for(int i = 0; i<=weight; i++)
             dp[0][i] = 0;
 

@@ -54,7 +54,6 @@ public class LRUCache {
             map.remove(lru.key);
         }
     }
-
     public int get(int key){
         if(!map.containsKey(key)){
             return  -1;
@@ -64,5 +63,4 @@ public class LRUCache {
         insert(node);
         return node.value;
     }
-
 }

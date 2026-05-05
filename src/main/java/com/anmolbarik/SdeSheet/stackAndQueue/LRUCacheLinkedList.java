@@ -6,8 +6,11 @@ import java.util.Map;
 public class LRUCacheLinkedList extends LinkedHashMap<Integer,Integer> {
 
     int capacity;
+
     LRUCacheLinkedList(int capacity){
+
         super(capacity,0.75f,true);
+
         this.capacity=capacity;
     }
 

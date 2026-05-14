@@ -6,9 +6,6 @@ class Node {
     Integer data;
     List<Node> neighbors;
 
-
-
-
     Node(int data) {
         this.data = data;
         this.neighbors = new ArrayList<>();
